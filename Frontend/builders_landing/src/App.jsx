@@ -1,12 +1,22 @@
 import './App.css'
+import Navbar from './components/Navbar'
+import Header from './components/Header.jsx'
+import OurBuilds from './components/OurBuilds.jsx'
+import About from './components/About.jsx'
+import Skills from './components/Skills.jsx'
+import Contact from './components/Contact.jsx'
+
 
 function App() {
 
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-      Landing page using tailwind and React
-    </h1>
+    <Navbar/>
+    <Header />
+    <OurBuilds />
+    <About/>
+    <Skills />
+    <Contact />
     </>
   )
 }
