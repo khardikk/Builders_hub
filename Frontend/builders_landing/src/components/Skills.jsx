@@ -2,8 +2,8 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div>
-        <h1>
+    <div className=''>
+        <h1 class="text-left ml-[5rem]">
         Skills
         </h1>
         <ul>
