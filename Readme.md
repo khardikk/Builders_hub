@@ -4,6 +4,9 @@
  - backend 
  - Fullstack
 
+## Stacks 
+- You can find projects using the MERN stack, also we will be using NextJs and other industry standard tools as they come.
+
 ## The Builders 
 - [Hardikk Kamboj](https://github.com/khardikk)
 - [ Akshat Girdhar](https://github.com/akshatg5) 
