@@ -6,7 +6,6 @@ const Card = () => {
   return (
     <div>
         <div>
-
         <h1>Cashflow</h1>
         <span>2024-Fullstack</span>
         <p>It is a web application that helps you to track your expenses and income. 

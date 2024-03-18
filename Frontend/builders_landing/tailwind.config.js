@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '3rem',
+      }
+    },
   },
   plugins: [],
 }
