@@ -11,12 +11,14 @@ function App() {
 
   return (
     <>
+    <div className="ml-32 mr-32">
     <Navbar/>
     <Header />
     <OurBuilds />
     <About/>
     <Skills />
     <Contact />
+    </div>
     </>
   )
 }
