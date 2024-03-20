@@ -9,7 +9,11 @@ export default {
       lineHeight: {
         'extra-loose': '2.5',
         '12': '3rem',
-      }
+      },
+      fontFamily: {
+        Inter: ["Inter", "sans-serif"],
+        DMSans: ["DM+Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],

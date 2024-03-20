@@ -10,7 +10,7 @@ const Header = () => {
     We Build Stuff<br></br>
     We are Builders Hub.
     </h1>
-    <p className='text-3xl font-light leading-normal my-5 text-gray-300'>We are a community of builders and we believe in building projects that we do not leave in between. 
+    <p className='text-3xl leading-normal my-5 text-gray-300 font-DMSans font-normal'>We are a community of builders and we believe in building projects that we do not leave in between. 
       We collaborate to make the building experience better, faster and more enjoyable.</p></div>
     </div>
     
