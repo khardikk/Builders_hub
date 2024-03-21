@@ -5,6 +5,7 @@ import OurBuilds from './components/OurBuilds.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Contact from './components/Contact.jsx'
+import Preloader from './components/Preloader.jsx'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
     <div className="ml-32 mr-32">
+    <Preloader />
     <Navbar/>
     <Header />
     <OurBuilds />
