@@ -5,7 +5,7 @@ import ellipseright from '../assets/ellipseright.png'
 
 const Contact = () => {
   return (
-    <div>
+    <div id='contact-section'>
         <img src={ellipseleft}></img>
         <div>
         <h1> Let's Talk</h1>
