@@ -1,8 +1,8 @@
 import React from 'react';
-import projectimg from '../assets/projectimg.png';
 import stack from '../assets/stack.png';
 
-const Card = () => {
+const Card = (props) => {
+  const { src } = props;
   return (
     <div data-aos="fade-right" data-aos-duration="1500" className='bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10'>
       <div className='py-16 px-16'>
@@ -24,7 +24,7 @@ const Card = () => {
 
         {/* Image div */}
         <div className='col-span-2'>
-          <img src={projectimg} alt='cashflow' className='w-full h-full object-cover' />
+          <img src={src} alt='cashflow' className='w-full h-full object-cover' />
         </div>
       </div>
     </div>
