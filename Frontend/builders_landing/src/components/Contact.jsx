@@ -16,7 +16,7 @@ const Contact = () => {
           <div className='flex flex-col items-center justify-center my-20 w-[602px]'>
             <div style={{ marginBottom: '20px' }}>
               <h1 className='font-Inter font-bold text-5xl mt-6 mb-6'> Let's Talk</h1>
-              <p className='font-Inter font-normal text-lg text-zinc-400 w-full'>Interested in working together or have a question? Feel free to reach out. We  Believe in collaboration and in helping out fellow builders.
+              <p className='font-Inter font-normal text-lg text-zinc-400 w-full'>Interested in working together or have a question? Feel free to reach out to any of us on our <b>Social Links</b> provided above. We  Believe in collaboration and in helping out fellow builders.
                 Let’s turn your ideas into amazing realities. Builders keep Building.</p>
             </div>
 
