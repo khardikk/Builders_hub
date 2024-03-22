@@ -80,7 +80,6 @@ export const preLoaderAnim = () => {
     });
 };
 
-
 // recurrent animations
 export const fadeUp = (el, delay = 0) => {
   tl.from(el, {
@@ -103,44 +102,7 @@ export const mobileLanding = () => {
     });
 };
 
-const animateShapes = () => {
-  const infiniteTl = gsap.timeline({
-    repeat: -1,
-  });
-  infiniteTl
-    .to(".shapes .shape", {
-      duration: 4,
-      rotate: 360,
-      delay: -1,
-      ease: "power3.easeInOut",
-      stagger: 2,
-    })
-    .to(".shapes .shape-3", {
-      duration: 1,
-      rotate: 360,
-      delay: -2,
-      ease: "power3.easeInOut",
-    })
-    .to(".shapes .shape", {
-      duration: 3,
-      rotate: 0,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    })
-    .to(".shapes .shape", {
-      duration: 1,
-      opacity: 0,
-      delay: -1,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    })
-    .to(".shapes .shape", {
-      duration: 1.5,
-      opacity: 1,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    });
-};
+
 
 const animateMainShape = () => {
   const infiniteTl = gsap.timeline({
@@ -167,30 +129,29 @@ const animateMainShape = () => {
     });
 };
 
-export const boxHover = (e) => {
-  const tl = gsap.timeline();
-  window.innerWidth >= 986 &&
-    tl
-      .to(e.target.querySelector(".link"), {
-        duration: 0,
-        opacity: 1,
-      })
-      .from(e.target.querySelectorAll(".box-anim"), {
-        duration: 0.3,
-        opacity: 0,
-        y: 30,
-        stagger: 0.1,
-        ease: "Power3.easeOut",
-      });
-};
+//   const tl = gsap.timeline();
+//   window.innerWidth >= 986 &&
+//     tl
+//       .to(e.target.querySelector(".link"), {
+//         duration: 0,
+//         opacity: 1,
+//       })
+//       .from(e.target.querySelectorAll(".box-anim"), {
+//         duration: 0.3,
+//         opacity: 0,
+//         y: 30,
+//         stagger: 0.1,
+//         ease: "Power3.easeOut",
+//       });
+// };
 
-export const boxExit = (e) => {
-  window.innerWidth >= 986 &&
-    gsap.to(e.target.querySelector(".link"), {
-      duration: 0,
-      opacity: 0,
-    });
-};
+// export const boxExit = (e) => {
+//   window.innerWidth >= 986 &&
+//     gsap.to(e.target.querySelector(".link"), {
+//       duration: 0,
+//       opacity: 0,
+//     });
+// };
 
 export const fadeIn = (el) => {
   gsap.to(el, {

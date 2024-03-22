@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <div className='flex justify-center items-center h-screen mb-24'>
       <div className='max-w-5xl flex flex-col items-center'>
-        <img src={headergraphic} alt="builders" className="w-60 h-86 object-cover my-12"/>
-    <h1 className="bg-gradient-to-b from-white via-slate-200 to-slate-300 inline-block text-transparent bg-clip-text text-8xl font-bold font-Inter leading-none">
+        <img src={headergraphic} alt="builders" className="w-60 h-86 object-cover my-12 hover:animate-pulse hover:cursor-pointer"/>
+    <h1  className="bg-gradient-to-b from-white via-slate-200 to-slate-300 inline-block text-transparent bg-clip-text text-8xl font-bold font-Inter leading-none">
     We Build Stuff<br></br>
     We are Builders Hub.
     </h1>
