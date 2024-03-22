@@ -11,25 +11,26 @@ const Contact = () => {
       >
 
         <div id='contact-section' style={{ textAlign: 'center' }}>
-          <img src={ellipseleft}></img>
-          <div>
+        <img src={ellipseleft} style={{ position: 'absolute',top: 0,left: 0,}}></img>
+
+          <div className='flex flex-col items-center justify-center my-20 w-[602px]'>
             <div style={{ marginBottom: '20px' }}>
-              <h1> Let's Talk</h1>
-              <p>Interested in working together or have a question? Feel free to reach out. We  Believe in collaboration and in helping out fellow builders.
+              <h1 className='font-Inter font-bold text-5xl mt-6 mb-6'> Let's Talk</h1>
+              <p className='font-Inter font-normal text-lg text-zinc-400 w-full'>Interested in working together or have a question? Feel free to reach out. We  Believe in collaboration and in helping out fellow builders.
                 Let’s turn your ideas into amazing realities. Builders keep Building.</p>
             </div>
-            <div>
-              <div>
-                <img src={connect}></img>
+            <div className='flex gap-3'>
+              <div className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center' >
+                <img className='w-[24px] h-[24px]' src={connect}></img>
               </div>
-              <div>
-                <img src={connect}></img>
+              <div className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center' >
+                <img className='w-[24px] h-[24px]' src={connect}></img>
               </div>
-              <div>
-                <img src={connect}></img>
+              <div className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center' >
+                <img className='w-[24px] h-[24px]' src={connect}></img>
               </div>
-              <div>
-                <img src={connect}></img>
+              <div className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center' >
+                <img className='w-[24px] h-[24px]' src={connect}></img>
               </div>
             </div>
           </div>

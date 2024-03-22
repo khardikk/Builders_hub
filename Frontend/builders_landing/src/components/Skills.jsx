@@ -3,12 +3,12 @@ import React from 'react'
 const Skills = () => {
   return (
     <div data-aos="fade-up" data-aos-duration="1500" >
-        <h1 class="text-left mb-[2rem] font-bold">
-        Skills
+        <h1 class="text-left mb-[2rem] font-Inter font-bold text-4xl ">
+        Stuff we build on
         </h1>
         
         <ul class="marker:text-violet-500 list-outside list-disc ml-4">
-          <div class="grid grid-cols-4 text-left  ">
+          <div class="grid grid-cols-4 text-left ">
         <li class="mb-[1rem]">HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
