@@ -5,8 +5,8 @@ const Card = (props) => {
   const { src } = props;
   return (
     <div data-aos="fade-right" data-aos-duration="1500" className='bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10'>
-      <div className='py-16 px-16'>
-      <div className='grid grid-cols-3 h-full'>
+      <div className='py-16 px-16 max-[480px]:py-8 max-[480px]:px-8'>
+      <div className='grid grid-cols-3 h-full max-[480px]:flex max-[480px]:flex-col'>
         {/* Text div */}
         <div className='pr-4  flex flex-col'>
         <div className='h-full items-start col-span-1 flex flex-col justify-around'>
