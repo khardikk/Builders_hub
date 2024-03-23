@@ -22,11 +22,11 @@ const memberInfo = [
     githubLink: "https://github.com/akshatg5"
   },
   {
-    memberName: "Hardik",
+    memberName: "Hardikk Kamboj",
     memberIntro: "Once an electronics whiz, I traded circuits for code. Now a full-stack dev, I wield Javascript & Python, crafting beautiful experiences (ReactJS, TailwindCSS) and robust backends (ExpressJS, MongoDB, PostgreSQL, Flask). My fuel is my desire to build data-driven solutions that empower decision-makers and drive business success. My ultimate goal? To create innovative financial tools that propel businesses towards unparalleled success. Let's build something revolutionary together.",
-    twitterLink: "https://twitter.com/AkshatGirdhar2",
-    linkedinLink: "https://www.linkedin.com/in/akshat-girdhar-56a848206/",
-    githubLink: "https://github.com/akshatg5"
+    twitterLink: "https://twitter.com/HdKamboj",
+    linkedinLink: "https://www.linkedin.com/in/hardikk-kamboj/",
+    githubLink: "https://github.com/khardikk"
   },
   {
     memberName: "Himanshu",
