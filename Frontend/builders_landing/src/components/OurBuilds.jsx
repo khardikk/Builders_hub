@@ -3,6 +3,8 @@ import Card from './Card'
 import projectimg from '../assets/projectimg.png';
 import yogawebsite from '../assets/yogaproject.png';
 import cashflow from '../assets/cashflow.png';
+import { Link } from 'react-router-dom';
+
 const OurBuilds = () => {
   return (
     <div data-aos="fade-up" data-aos-duration="1500" id='our-builds-section' className='mb-48 max-[480px]:mb-24 max-[480px]:p-4  max-[480px]:flex max-[480px]:flex-col'>
@@ -12,8 +14,8 @@ const OurBuilds = () => {
         <Card src={projectimg} />
         <Card src={yogawebsite} />
         <Card src={cashflow} />
-        <a href="#" className='font-Inter font-semibold text-base underline'>View all projects</a>
-    </div>
+        <Link to="/projects" className='font-Inter font-semibold text-base underline'>View all projects</Link>    
+        </div>
   )
 }
 
