@@ -37,64 +37,75 @@ const memberInfo = [
   },
   
 ];
-
 const About = () => {
   return (
     <>
-    <div className='max-[480px]:mb-24 max-[480px]:p-4'> 
-   <h1 className="text-left mb-10 font-Inter font-bold text-4xl">About Us</h1>
-    <div className="swiper-container">
-      <Swiper
-          
-          loop={true}
-          pagination={{ clickable: true }}
-          navigation={true}
-          modules={[ Navigation, Pagination]}
-          className="mySwiper-about"
-        >
-        {memberInfo.map((member, index) => (
-          <SwiperSlide className='px-12'>
-          <div  key={index}>
-            <AboutComponent
-              memberName={member.memberName}
-              memberIntro={member.memberIntro}
-              twitterLink={member.twitterLink}
-              linkedinLink={member.linkedinLink}
-              githubLink={member.githubLink}
-            />
-          </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-    </div>
+      <div className="about-container">
+        <h1 className="text-left mb-10 font-Inter font-bold text-4xl">About Us</h1>
+        <div className="swiper-container">
+          <Swiper
+            loop={true}
+            pagination={{ clickable: true }}
+            navigation={true}
+            modules={[Navigation, Pagination]}
+            className="mySwiper-about"
+          >
+            {memberInfo.map((member, index) => (
+              <SwiperSlide key={index} className="about-member">
+                <AboutComponent member={member} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
     </>
   );
 };
 
-const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, githubLink }) => {
+const AboutComponent = ({ member }) => {
+  const { memberName, memberIntro, twitterLink, linkedinLink, githubLink } = member;
+
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" id='about-section' className="flex flex-row justify-between mt-8 mb-20">
-      <div className="flex flex-col w-[51.375rem]">
-        <h4 className="text-left mb-10 font-Inter font-bold text-4xl">{memberName}</h4>
-        <p className="text-left w-[45rem] font-DMSans text-2xl leading-relaxed mb-8">{memberIntro}</p>
-        <div className='flex gap-3'>
-          <a href={twitterLink} target="_blank" rel="noopener noreferrer" className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
-            <img className='w-[24px] h-[24px]' src={twitter} alt="Twitter" />
+    <div className="flex flex-row max-sm:flex-col justify-between max-sm:items-center mt-8 mb-20">
+      <div className="about-member-info flex flex-col w-full md:w-1/2 px-4 md:px-0">
+        <h4 className="text-center mb-10 font-Inter font-bold text-4xl max-sm:text-2xl">
+          {memberName}
+        </h4>
+        <p className="text-left font-DMSans text-xl max-sm:text-xl leading-relaxed mb-8">
+          {memberIntro}
+        </p>
+        <div className="flex gap-3">
+          <a
+            href={twitterLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-social-link flex items-center justify-center hover:bg-neutral-800 active:bg-neutral-700 bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500"
+          >
+            <img className="w-[24px] h-[24px]" src={twitter} alt="Twitter" />
           </a>
-          <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
-            <img className='w-[24px] h-[24px]' src={linkedin} alt="LinkedIn" />
+          <a
+            href={linkedinLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-social-link flex items-center justify-center hover:bg-neutral-800 active:bg-neutral-700 bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500"
+          >
+            <img className="w-[24px] h-[24px]" src={linkedin} alt="LinkedIn" />
           </a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" className='bg-white px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
-            <img className='w-[24px] h-[24px]' src={github} alt="GitHub" />
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-social-link flex items-center justify-center hover:bg-neutral-800 active:bg-neutral-700 bg-white px-3 py-3 rounded-lg ring-1 ring-neutral-500"
+          >
+            <img className="w-[24px] h-[24px]" src={github} alt="GitHub" />
           </a>
         </div>
       </div>
-      <div className="flex ml-10">
+      <div className="about-member-image flex justify-center md:justify-end w-full md:w-1/2 mt-8 md:mt-0">
         <img src={aboutus} alt="About Us" />
       </div>
     </div>
   );
 };
-
 export default About;
+
