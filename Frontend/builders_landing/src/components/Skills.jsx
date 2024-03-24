@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" >
+    <div data-aos="fade-up" data-aos-duration="1500" className='max-[480px]:mb-24 max-[480px]:p-4'>
         <h1 class="text-left mb-[2rem] font-Inter font-bold text-3xl ">
         Stuff we build on
         </h1>

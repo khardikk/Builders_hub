@@ -41,6 +41,7 @@ const memberInfo = [
 const About = () => {
   return (
     <>
+    <div className='max-[480px]:mb-24 max-[480px]:p-4'> 
    <h1 className="text-left mb-10 font-Inter font-bold text-4xl">About Us</h1>
     <div className="swiper-container">
       <Swiper
@@ -65,6 +66,7 @@ const About = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
     </div>
     </>
   );
