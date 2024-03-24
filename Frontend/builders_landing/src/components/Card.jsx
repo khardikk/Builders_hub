@@ -10,9 +10,9 @@ const Card = (props) => {
         {/* Text div */}
         <div className='pr-4  flex flex-col'>
         <div className='h-full items-start col-span-1 flex flex-col justify-around max-sm:mb-6'>
-          <h1 className='mb-6 font-Inter font-bold text-4xl text-left max-sm:w-[16rem] max-sm:text-center'>Cashflow</h1>
-          <span className='py-6 font-Inter font-normal text-base text-left max-sm:text-center max-sm:w-[15rem]'>2024-Fullstack</span>
-          <p className='font-Inter font-normal text-lg text-left max-sm:w-[16rem] max-sm:text-center'>
+          <h1 className='mb-6 font-Inter font-bold text-4xl text-left max-sm:w-[16rem] max-sm:text-left'>Cashflow</h1>
+          <span className='py-6 font-Inter font-normal text-base text-left max-sm:text-left max-sm:w-[15rem]'>2024-Fullstack</span>
+          <p className='font-Inter font-normal text-lg text-left max-sm:w-[19rem] max-sm:text-left'>
             Transformed an e-commerce website with a modern redesign, optimizing the shopping journey and elevating brand identity. Resulted in improved user engagement, increased sales, and a seamless shopping experience.
           </p>
           <img className='w-[40px] h-[24px] mb-20 mt-14 max-sm:mb-8' src={stack} alt='stack' />

@@ -41,7 +41,7 @@ const memberInfo = [
 const About = () => {
   return (
     <>
-    <div className='max-[480px]:mb-24 max-[480px]:p-4'> 
+    <div className='max-[480px]:p-4 max-[480px]:mb-10'> 
    <h1 className="text-left mb-10 font-Inter font-bold text-4xl">About Us</h1>
     <div className="swiper-container">
       <Swiper
@@ -53,7 +53,7 @@ const About = () => {
           className="mySwiper-about"
         >
         {memberInfo.map((member, index) => (
-          <SwiperSlide className='px-12'>
+          <SwiperSlide className='px-12  max-[480px]:px-4'>
           <div  key={index}>
             <AboutComponent
               memberName={member.memberName}
@@ -74,11 +74,11 @@ const About = () => {
 
 const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, githubLink }) => {
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" id='about-section' className="flex flex-row justify-between mt-8 mb-20">
-      <div className="flex flex-col w-[51.375rem]">
-        <h4 className="text-left mb-10 font-Inter font-bold text-4xl">{memberName}</h4>
-        <p className="text-left w-[45rem] font-DMSans text-2xl leading-relaxed mb-8">{memberIntro}</p>
-        <div className='flex gap-3'>
+    <div data-aos="fade-up" data-aos-duration="1500" id='about-section' className="flex flex-row justify-between mt-8 mb-20  max-[480px]:flex-col-reverse max-[480px]:items-center max-[480px]:mb-10">
+      <div className="flex flex-col w-[51.375rem] max-[480px]:w-full">
+        <h4 className="text-left mb-10 font-Inter font-bold text-4xl max-[480px]:text-center">{memberName}</h4>
+        <p className="text-left w-[45rem] font-DMSans text-2xl leading-relaxed mb-8  max-[480px]:text-base  max-[480px]:w-[315px] max-[480px]:text-center max-[480px]:mt-5">{memberIntro}</p>
+        <div className='flex gap-3 max-[480px]:justify-center'>
           <a href={twitterLink} target="_blank" rel="noopener noreferrer" className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
             <img className='w-[24px] h-[24px]' src={twitter} alt="Twitter" />
           </a>
@@ -90,7 +90,7 @@ const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, gi
           </a>
         </div>
       </div>
-      <div className="flex ml-10">
+      <div className="flex ml-10 max-[480px]:ml-2">
         <img src={aboutus} alt="About Us" />
       </div>
     </div>

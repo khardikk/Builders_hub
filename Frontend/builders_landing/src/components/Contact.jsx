@@ -11,7 +11,7 @@ const Contact = () => {
       >
 
         <div id='contact-section' style={{ textAlign: 'center' }}>
-        <img src={ellipseleft} style={{ position: 'absolute',top: 0,left: 0,}}></img>
+        <img src={ellipseleft}  className='max-[480px]:z-[-1]' style={{ position: 'absolute',top: 0,left: 0,}}></img>
 
           <div className='flex flex-col items-center justify-center my-20 w-[602px] max-[480px]:w-[18rem]'>
             <div style={{ marginBottom: '20px' }}>
@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
 
           </div>
-          <img src={ellipseright} style={{ position: 'absolute',bottom: 0,right: 0,}}></img>
+          <img src={ellipseright} className='max-[480px]:z-[-1]' style={{ position: 'absolute',bottom: 0,right: 0,}}></img>
         </div>
       </div>
     </>
