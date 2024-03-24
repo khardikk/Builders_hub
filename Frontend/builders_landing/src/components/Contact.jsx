@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <div
-        data-aos="fade-up" data-aos-duration="1500"className='bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10 mt-[5rem]'style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }} 
+        data-aos="fade-up" data-aos-duration="1500"className="bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10 mt-[5rem] max-sm:mr-4 max-sm:ml-4 "style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }} 
       >
 
         <div id='contact-section' style={{ textAlign: 'center' }}>
