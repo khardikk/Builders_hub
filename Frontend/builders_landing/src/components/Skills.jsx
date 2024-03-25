@@ -16,7 +16,7 @@ const Skills = () => {
         <li class="mb-[1rem]" >Node.js</li>
         <li class="mb-[1rem]">Express</li>
         <li class="mb-[1rem]">MongoDB</li>
-        <li class="mb-[1rem]" >Next JS</li>
+        <li class="mb-[1rem]">Next JS</li>
         <li class="mb-[1rem]">Tailwind CSS</li>
         <li class="mb-[1rem]">Flask</li>
         <li class="mb-[1rem]">Django</li>

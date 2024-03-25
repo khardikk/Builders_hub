@@ -17,7 +17,7 @@ const Card = (props) => {
           </p>
           <img className='w-[40px] h-[24px] mb-20 mt-14 max-sm:mb-8' src={stack} alt='stack' />
           <button className='ring-2 ring-neutral-300 rounded-lg py-3 px-6 font-Inter font-semibold text-base'>
-            Read case study
+           View Project
           </button>
         </div>
         </div>
