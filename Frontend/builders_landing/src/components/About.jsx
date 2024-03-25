@@ -3,6 +3,9 @@ import aboutus from '../assets/aboutus.png';
 import twitter from '../assets/twitter.png';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
+import Hardikk from '../assets/Hardikk.png';
+import Akshat from '../assets/Akshat.png';
+import Himanshu from '../assets/Himanshu.png';
 
 //swiper modules
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,24 +19,27 @@ import { Navigation, Pagination } from "swiper/modules";
 const memberInfo = [
   {
     memberName: "Akshat Girdhar",
-    memberIntro: "Once an electronics whiz, I traded circuits for code. Now a full-stack dev, I wield Javascript & Python, crafting beautiful experiences (ReactJS, TailwindCSS) and robust backends (ExpressJS, MongoDB, PostgreSQL, Flask). My fuel is my desire to build data-driven solutions that empower decision-makers and drive business success. My ultimate goal? To create innovative financial tools that propel businesses towards unparalleled success. Let's build something revolutionary together.",
+    memberIntro: "Meet Akshat, the full-stack ninja who slays in JavaScript and Python. With ReactJS and ExpressJS as their trusty sidekicks, they whip up digital marvels faster than you can say TailwindCSS. Armed with MongoDB and PostgreSQL, Akshat's on a mission to make the web cooler, one line of code at a time! 🚀",
     twitterLink: "https://twitter.com/AkshatGirdhar2",
     linkedinLink: "https://www.linkedin.com/in/akshat-girdhar-56a848206/",
-    githubLink: "https://github.com/akshatg5"
+    githubLink: "https://github.com/akshatg5",
+    memberImage: Akshat
   },
   {
     memberName: "Hardikk Kamboj",
-    memberIntro: "Once an electronics whiz, I traded circuits for code. Now a full-stack dev, I wield Javascript & Python, crafting beautiful experiences (ReactJS, TailwindCSS) and robust backends (ExpressJS, MongoDB, PostgreSQL, Flask). My fuel is my desire to build data-driven solutions that empower decision-makers and drive business success. My ultimate goal? To create innovative financial tools that propel businesses towards unparalleled success. Let's build something revolutionary together.",
+    memberIntro: "Say hi to Hardikk! Tech wizard by day, community champ by night. With React and Python, they build digital dreams. From Webflow, GenAI to AR filters, they love to tinker. But what really lights their fire? Connecting with people! Get ready to be amazed because Hardikk's bringing the human touch to tech! 🚀",
     twitterLink: "https://twitter.com/HdKamboj",
     linkedinLink: "https://www.linkedin.com/in/hardikk-kamboj/",
-    githubLink: "https://github.com/khardikk"
+    githubLink: "https://github.com/khardikk",
+    memberImage: Hardikk
   },
   {
-    memberName: "Himanshu",
-    memberIntro: "Once an electronics whiz, I traded circuits for code. Now a full-stack dev, I wield Javascript & Python, crafting beautiful experiences (ReactJS, TailwindCSS) and robust backends (ExpressJS, MongoDB, PostgreSQL, Flask). My fuel is my desire to build data-driven solutions that empower decision-makers and drive business success. My ultimate goal? To create innovative financial tools that propel businesses towards unparalleled success. Let's build something revolutionary together.",
-    twitterLink: "https://twitter.com/AkshatGirdhar2",
-    linkedinLink: "https://www.linkedin.com/in/akshat-girdhar-56a848206/",
-    githubLink: "https://github.com/akshatg5"
+    memberName: "Himanshu Gupta",
+    memberIntro: "Meet Himanshu!  Frontend master and people-person extraordinaire. With HTML, CSS, JS, and React, he's a digital dynamo. But what really sets him apart? His infectious humor and love for building cool stuff! Get ready to be inspired and entertained because with Himanshu, it's always a fun ride! 🚀",
+    twitterLink: "https://twitter.com/Himanshuu3112",
+    linkedinLink: "https://www.linkedin.com/in/himanshu-gupta-431a0722a/",
+    githubLink: "https://github.com/Himanshu-gupta31",
+    memberImage: Himanshu
   },
   
 ];
@@ -61,6 +67,7 @@ const About = () => {
               twitterLink={member.twitterLink}
               linkedinLink={member.linkedinLink}
               githubLink={member.githubLink}
+              memberImage={member.memberImage}
             />
           </div>
           </SwiperSlide>
@@ -72,7 +79,7 @@ const About = () => {
   );
 };
 
-const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, githubLink }) => {
+const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, githubLink, memberImage }) => {
   return (
     <div data-aos="fade-up" data-aos-duration="1500" id='about-section' className="flex flex-row justify-between mt-8 mb-20  max-[480px]:flex-col-reverse max-[480px]:items-center max-[480px]:mb-10">
       <div className="flex flex-col w-[51.375rem] max-[480px]:w-full">
@@ -91,7 +98,7 @@ const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, gi
         </div>
       </div>
       <div className="flex ml-10 max-[480px]:ml-2">
-        <img src={aboutus} alt="About Us" />
+        <img src={memberImage} alt="About Us" />
       </div>
     </div>
   );
