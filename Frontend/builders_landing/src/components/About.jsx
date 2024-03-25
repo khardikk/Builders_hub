@@ -48,7 +48,7 @@ const About = () => {
   return (
     <>
     <div className='max-[480px]:p-4 max-[480px]:mb-10'> 
-   <h1 className="text-left mb-10 font-Inter font-bold text-4xl">About Us</h1>
+   <h1 className="text-left mb-10 font-Inter font-bold text-4xl">Meet The Builders</h1>
     <div className="swiper-container">
       <Swiper
           
