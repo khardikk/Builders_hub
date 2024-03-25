@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutus from '../assets/aboutus.png';
+// import aboutus from '../assets/aboutus.png';
 import twitter from '../assets/twitter.png';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
@@ -13,7 +13,7 @@ import 'swiper/swiper-bundle.css';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Define memberInfo properly
 const memberInfo = [
@@ -55,8 +55,10 @@ const About = () => {
           loop={true}
           pagination={{ clickable: true }}
           navigation={true}
-          modules={[ Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper-about"
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+
         >
         {memberInfo.map((member, index) => (
           <SwiperSlide className='px-12  max-[480px]:px-4'>
