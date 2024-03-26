@@ -7,11 +7,11 @@ const Contact = () => {
   return (
     <>
       <div
-        data-aos="fade-up" data-aos-duration="1500"className='bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10 mt-[5rem]'style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }} 
+        data-aos="fade-up" data-aos-duration="1500"className="bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10 mt-[5rem] max-sm:mr-4 max-sm:ml-4 "style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }} 
       >
 
         <div id='contact-section' style={{ textAlign: 'center' }}>
-        <img src={ellipseleft} style={{ position: 'absolute',top: 0,left: 0,}}></img>
+        <img src={ellipseleft}  className='max-[480px]:z-[-1]' style={{ position: 'absolute',top: 0,left: 0,}}></img>
 
           <div className='flex flex-col items-center justify-center my-20 w-[602px] max-[480px]:w-[18rem]'>
             <div style={{ marginBottom: '20px' }}>
@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
 
           </div>
-          <img src={ellipseright} style={{ position: 'absolute',bottom: 0,right: 0,}}></img>
+          <img src={ellipseright} className='max-[480px]:z-[-1]' style={{ position: 'absolute',bottom: 0,right: 0,}}></img>
         </div>
       </div>
     </>
