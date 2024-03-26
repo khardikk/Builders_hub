@@ -2,7 +2,7 @@ import React from 'react';
 import stack from '../assets/stack.png';
 
 const Card = (props) => {
-  const { src,projects,ProjectName,Projectstack} = props;
+  const { src,projects,ProjectName,Projectstack,ProjectDesc} = props;
   return (
     <div data-aos="fade-right" data-aos-duration="1500" className='bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10'>
       <div className='py-16 px-16 max-[480px]:py-8 max-[480px]:px-8'>
@@ -13,7 +13,7 @@ const Card = (props) => {
           <h1 className='mb-6 font-Inter font-bold text-4xl text-left max-sm:w-[16rem] max-sm:text-left'>{ProjectName}</h1>
           <span className='py-6 font-Inter font-normal text-base text-left max-sm:text-left max-sm:w-[15rem]'>{Projectstack}</span>
           <p className='font-Inter font-normal text-lg text-left max-sm:w-[19rem] max-sm:text-left'>
-            Transformed an e-commerce website with a modern redesign, optimizing the shopping journey and elevating brand identity. Resulted in improved user engagement, increased sales, and a seamless shopping experience.
+          {ProjectDesc}
           </p>
           <img className='w-[40px] h-[24px] mb-20 mt-14 max-sm:mb-8' src={stack} alt='stack' />
           <a href={projects} target='blank'>
