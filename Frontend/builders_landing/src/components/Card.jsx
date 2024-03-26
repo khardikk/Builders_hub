@@ -1,5 +1,7 @@
 import React from 'react';
-import stack from '../assets/stack.png';
+import Tailwind from '../assets/Tailwind.png';
+import rctlogo from '../assets/React-logo.png';
+import figmalogo from '../assets/Figma-logo.png';
 
 const Card = (props) => {
   const { src,projects,ProjectName,Projectstack,ProjectDesc} = props;
@@ -15,7 +17,11 @@ const Card = (props) => {
           <p className='font-Inter font-normal text-lg text-left max-sm:w-[19rem] max-sm:text-left'>
           {ProjectDesc}
           </p>
-          <img className='w-[40px] h-[24px] mb-20 mt-14 max-sm:mb-8' src={stack} alt='stack' />
+          <div className='flex gap-3'>
+          <img className='w-[40px] h-[32px] mb-20 mt-14 max-sm:mb-8' src={Tailwind} alt='Tailwind-logo' />
+          <img className='w-[40px] h-[32px] mb-20 mt-14 max-sm:mb-8' src={rctlogo} alt='React-logo' />
+          <img className='w-[40px] h-[32px] mb-20 mt-14 max-sm:mb-8' src={figmalogo} alt='Figma-logo' />
+          </div>
           <a href={projects} target='blank'>
           <button className='ring-2 ring-neutral-300 rounded-lg py-3 px-6 font-Inter font-semibold text-base'>
            View Project
