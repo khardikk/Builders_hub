@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="ml-32 mr-32 max-[480px]:mr-0 max-[480px]:ml-0">
-        {/* <Preloader /> */}
+        <Preloader />
         <div className="relative">
           <img className="absolute inset-0 z-[1] w-full h-full object-cover" src={blurbg} alt="Background" />
           <Navbar style={{ zIndex: '2' }} />
