@@ -43,7 +43,6 @@ const memberInfo = [
   },
   
 ];
-
 const About = () => {
   return (
     <>
@@ -91,11 +90,21 @@ const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, gi
           <a href={twitterLink} target="_blank" rel="noopener noreferrer" className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
             <img className='w-[24px] h-[24px]' src={twitter} alt="Twitter" />
           </a>
-          <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
-            <img className='w-[24px] h-[24px]' src={linkedin} alt="LinkedIn" />
+          <a
+            href={linkedinLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-social-link flex items-center justify-center hover:bg-neutral-800 active:bg-neutral-700 bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500"
+          >
+            <img className="w-[24px] h-[24px]" src={linkedin} alt="LinkedIn" />
           </a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" className='bg-white px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
-            <img className='w-[24px] h-[24px]' src={github} alt="GitHub" />
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-social-link flex items-center justify-center hover:bg-neutral-800 active:bg-neutral-700 bg-white px-3 py-3 rounded-lg ring-1 ring-neutral-500"
+          >
+            <img className="w-[24px] h-[24px]" src={github} alt="GitHub" />
           </a>
         </div>
       </div>
@@ -105,5 +114,5 @@ const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, gi
     </div>
   );
 };
-
 export default About;
+
