@@ -82,10 +82,10 @@ const About = () => {
 
 const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, githubLink, memberImage }) => {
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" id='about-section' className="flex flex-row justify-between mt-8 mb-20  max-[480px]:flex-col-reverse max-[480px]:items-center max-[480px]:mb-10">
-      <div className="flex flex-col w-[51.375rem] max-[480px]:w-full">
+    <div data-aos="fade-up" data-aos-duration="1500" id='about-section' className="flex flex-row justify-between mt-8 mb-20  max-[480px]:flex-col-reverse max-[480px]:items-center max-[480px]:mb-10 max-md:flex max-md:flex-col-reverse">
+      <div className="flex flex-col w-[51.375rem] max-[480px]:w-full max-md:w-full">
         <h4 className="text-left mb-10 font-Inter font-bold text-4xl max-[480px]:text-center">{memberName}</h4>
-        <p className="text-left w-[45rem] font-DMSans text-2xl leading-relaxed mb-8  max-[480px]:text-base  max-[480px]:w-[315px] max-[480px]:text-center max-[480px]:mt-5">{memberIntro}</p>
+        <p className="text-left w-[45rem] font-DMSans text-2xl leading-relaxed mb-8  max-[480px]:text-base  max-[480px]:w-[315px] max-[480px]:text-center max-[480px]:mt-5 max-md:w-[38rem]">{memberIntro}</p>
         <div className='flex gap-3 max-[480px]:justify-center'>
           <a href={twitterLink} target="_blank" rel="noopener noreferrer" className='bg-neutral-950 px-3 py-3 rounded-lg ring-1 ring-neutral-500 flex items-center justify-center'>
             <img className='w-[24px] h-[24px]' src={twitter} alt="Twitter" />
@@ -108,7 +108,7 @@ const AboutComponent = ({ memberName, memberIntro, twitterLink, linkedinLink, gi
           </a>
         </div>
       </div>
-      <div className="flex ml-10 max-[480px]:ml-2">
+      <div className="flex ml-10 max-[480px]:ml-2 max-md:flex max-md:justify-center max-md:items-center">
         <img src={memberImage} alt="About Us" />
       </div>
     </div>
