@@ -2,7 +2,7 @@
   background-color: #0A0A0A;
   margin: 0 auto;
   padding-left: 1rem;
-  padding-left: 1rem;
+  
   padding-top: 0rem;
   text-align: center;
   color: white;
@@ -12,5 +12,10 @@
 @media screen and (max-width: 600px) {
   #root {
     padding: 0rem;
+  }
+}
+@media only screen and (max-width:1024px){
+  #root{
+  padding-right: 1rem;
   }
 }

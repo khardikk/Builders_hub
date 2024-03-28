@@ -18,14 +18,14 @@ const Card = (props) => {
       className="bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10"
     >
       <div className="py-16 px-16 max-[480px]:py-8 max-[480px]:px-8">
-        <div className="grid grid-cols-3 h-full max-[480px]:flex max-[480px]:flex-col">
+        <div className="grid grid-cols-3 h-full max-[480px]:flex max-[480px]:flex-col md:max-lg:flex md:max-lg:flex-col">
           {/* Text div */}
           <div className="pr-4  flex flex-col">
             <div className="h-full items-start col-span-1 flex flex-col justify-around max-sm:mb-6">
-              <h1 className="mb-6 font-Inter font-bold text-4xl text-left max-sm:w-[16rem] max-sm:text-left">
+              <h1 className="mb-6 font-Inter font-bold text-4xl text-left max-sm:w-[18rem] max-sm:text-left">
                 {ProjectName}
               </h1>
-              <span className="py-6 font-Inter font-normal text-base text-left max-sm:text-left max-sm:w-[15rem]">
+              <span className="py-6 font-Inter font-normal text-base text-left max-sm:text-left max-sm:w-[19rem]">
                 {Projectstack}
               </span>
               <p className="font-Inter font-normal text-lg text-left max-sm:w-[19rem] max-sm:text-left">
@@ -45,7 +45,7 @@ const Card = (props) => {
                 ))}
               </div>
               <a href={projects} target="blank">
-                <button className="ring-2 ring-neutral-300 rounded-lg py-3 px-6 font-Inter font-semibold text-base">
+                <button className="ring-2 ring-neutral-300 rounded-lg py-3 px-6 font-Inter font-semibold text-base md:max-lg:mb-8">
                   View Project
                 </button>
               </a>
