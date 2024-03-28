@@ -18,7 +18,7 @@ const Card = (props) => {
       className="bg-neutral-900 rounded-3xl ring-1 ring-neutral-500 w-1200 h-620 my-10"
     >
       <div className="py-16 px-16 max-[480px]:py-8 max-[480px]:px-8">
-        <div className="grid grid-cols-3 h-full max-[480px]:flex max-[480px]:flex-col max-md:flex max-md:flex-col">
+        <div className="grid grid-cols-3 h-full max-[480px]:flex max-[480px]:flex-col md:max-lg:flex md:max-lg:flex-col">
           {/* Text div */}
           <div className="pr-4  flex flex-col">
             <div className="h-full items-start col-span-1 flex flex-col justify-around max-sm:mb-6">
@@ -45,7 +45,7 @@ const Card = (props) => {
                 ))}
               </div>
               <a href={projects} target="blank">
-                <button className="ring-2 ring-neutral-300 rounded-lg py-3 px-6 font-Inter font-semibold text-base max-md:mb-4">
+                <button className="ring-2 ring-neutral-300 rounded-lg py-3 px-6 font-Inter font-semibold text-base md:max-lg:mb-8">
                   View Project
                 </button>
               </a>
