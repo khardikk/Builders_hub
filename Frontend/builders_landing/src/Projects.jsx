@@ -14,8 +14,7 @@ const Projects = () => {
                                 Hi we are currently Building this Page!
                                 Stay Tuned!
                             </h1>
-                            <button class="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-zinc-600 text-white
-                             hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"><Link to="/">Take me back</Link></button>
+
                         </div>
                     </div>
 
