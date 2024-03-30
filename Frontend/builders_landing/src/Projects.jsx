@@ -5,7 +5,7 @@ const Projects = () => {
   return (
         <>
         <Navbar />
-      <div className="lg:px-24 lg:py-24 md:max-lg:py-20 md:max-lg:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:max-lg:gap-28 gap-16 z-[1]">
+      <div className="lg:px-24 lg:py-24 md:max-xl:py-20 md:max-xl:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:max-xl:gap-28 gap-16 z-[1]">
         <section className="flex flex-col items-center">
             {/* Main div to enclose the 2 divs */}
             <div className="relative mb-16 w-full items-start gap-6 lg:flex xl:gap-8 mx-auto">
