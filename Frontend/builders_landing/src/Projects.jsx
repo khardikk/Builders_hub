@@ -3,9 +3,9 @@ import Navbar from './components/Navbar'
 import { Link } from 'react-router-dom';
 const Projects = () => {
   return (
-
-    <div className="lg:px-24 lg:py-24 md:max-lg:py-20 md:max-lg:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:max-lg:gap-28 gap-16">
-            {/* <Navbar /> */}
+        <>
+        <Navbar />
+      <div className="lg:px-24 lg:py-24 md:max-lg:py-20 md:max-lg:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:max-lg:gap-28 gap-16 z-[1]">
         <section className="flex flex-col items-center">
             {/* Main div to enclose the 2 divs */}
             <div className="relative mb-16 w-full items-start gap-6 lg:flex xl:gap-8 mx-auto">
@@ -39,62 +39,57 @@ const Projects = () => {
                     
                     {/* Div for grid */}
 
-                    <div className="grid w-full grid-cols-2 grid-rows-[9rem] gap-2 md:grid-cols-3 xl:grid-cols-3 xl:gap-3 2xl:grid-cols-4">
+<div className="grid w-full grid-cols-2 grid-rows-[9rem] gap-2 md:grid-cols-3 xl:grid-cols-3 xl:gap-3 2xl:grid-cols-4">
   {/* a sqaure div to fit in the grid of red color */}
-  <a href="/">
-  <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
-    <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200  lg:group-hover:opacity-0"></div>
-    <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
-      <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
-      </div>
-
-    </div>
-    <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
-    </div>
-    <div class="absolute bottom-6 flex min-h-[96px] w-full flex-col items-center justify-start text-center lg:group-hover:translate-y-[100%]">
-      <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight lg:opacity-0">Design Blunders</p>
-    </div>
-  </div>
-</a>
-<a href="/">
-  <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
-    <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200  lg:group-hover:opacity-0"></div>
-    <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
-      <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
-      </div>
-
-    </div>
-    <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
-    </div>
-    <div class="absolute bottom-6 flex min-h-[96px] w-full flex-col items-center justify-start text-center lg:group-hover:translate-y-[100%]">
-     
-      <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight lg:opacity-0">Design Blunders</p>
-    </div>
-  </div>
-</a>
-<a href="/">
-  <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
-    <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200 lg:group-hover:opacity-0"></div>
-    <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
-      <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
-      </div>
-   
-    </div>
-    <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
-    </div>
+    <a href="/">
+    <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
+        <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200  lg:group-hover:opacity-0"></div>
+        <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
+        <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
+        </div>
+        </div>
+        <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
+        </div>
         <div class="absolute bottom-6 flex min-h-[96px] w-full flex-col items-center justify-start text-center lg:group-hover:translate-y-[100%]">
-    <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight">Design Blunders</p>
+        <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight lg:opacity-0">Design Blunders</p>
+        </div>
     </div>
-
-  </div>
-</a>
-
-                
-                </div>
-  
+    </a>
+    <a href="/">
+    <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
+        <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200  lg:group-hover:opacity-0"></div>
+        <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
+        <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
         </div>
-        </section>
         </div>
+        <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
+        </div>
+        <div class="absolute bottom-6 flex min-h-[96px] w-full flex-col items-center justify-start text-center lg:group-hover:translate-y-[100%]">
+        <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight lg:opacity-0">Design Blunders</p>
+        </div>
+    </div>
+    </a>
+    <a href="/">
+    <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
+        <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200 lg:group-hover:opacity-0"></div>
+        <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
+        <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
+        </div>
+        </div>
+        <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
+        </div>
+        <div class="absolute bottom-6 flex min-h-[96px] w-full flex-col items-center justify-start text-center lg:group-hover:translate-y-[100%]">
+        <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight">Design Blunders</p>
+        </div>
+
+    </div>
+    </a>
+
+</div>
+</div>
+</section>
+</div>
+</>
   )
 }
 

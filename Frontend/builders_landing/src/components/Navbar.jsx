@@ -7,7 +7,7 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/'; // Check if current path is home page
   const isProjectsPage = location.pathname === '/projects'; // Check if current path is projects page
   return (
-    <div className='w-full flex pt-6 absolute inset-0 z-[1]'>
+    <div className='w-full flex pt-6 absolute z-[1]'>
       <div className='text-base font-semibold items-center flex-1 font-Inter'>
       {isHomePage && (
           <RouterLink
