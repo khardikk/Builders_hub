@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="ml-32 mr-32 max-[480px]:mr-0 max-[480px]:ml-0 md:max-lg:mr-0 md:max-lg:ml-0">
+      <div className="ml-32 mr-32 max-[480px]:mr-0 max-[480px]:ml-0 md:max-xl:mr-0 md:max-xl:ml-0">
         <Preloader />
         <div className="relative">
           <img className="absolute inset-0 z-[1] w-full h-full object-cover" src={blurbg} alt="Background" />
