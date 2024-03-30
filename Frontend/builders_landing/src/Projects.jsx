@@ -22,16 +22,16 @@ const Projects = () => {
                         <input className="block w-full rounded-md border border-transparent py-2 pl-10 pr-3 text-sm placeholder-opacity-60 outline-none transition hover:placeholder-opacity-100 focus:border-blue-500 focus:placeholder-opacity-30 focus:ring-4 focus:ring-blue-500/30 bg-gray-300 bg-opacity-5 text-gray-300 placeholder-gray-300 ring-offset-gray-900 hover:bg-opacity-10 focus:bg-gray-800 focus:bg-opacity-100" placeholder="Search…" />
                     </div>
                     <nav aria-label="Sidebar" className="space-y-2 z-10 hidden lg:block">
-                        <a aria-current="page" className="group flex items-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 cursor-default bg-yellow-400 bg-opacity-30 text-white ring-yellow-400 ring-opacity-80">
+                        <a aria-current="page" className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 cursor-default bg-yellow-400 bg-opacity-30 text-white ring-yellow-400 ring-opacity-80">
                         <span className="truncate">All</span>
                         </a>
-                        <a aria-current="false" className="group flex items-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95">
+                        <a aria-current="false" className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95">
                         <span className="truncate">Frontend</span>
                         </a>
-                        <a aria-current="false" className="group flex items-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95">
+                        <a aria-current="false" className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95">
                         <span className="truncate">Backend</span>
                         </a>
-                        <a aria-current="false" className="group flex items-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95">
+                        <a aria-current="false" className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95">
                         <span className="truncate">Fullstack</span>
                         </a>
                     </nav>
