@@ -25,6 +25,7 @@ const Navbar = () => {
             Home
           </RouterLink>
         )}
+        {isHomePage && (
         <ScrollLink
           to='our-builds-section'
           spy={true}
@@ -35,6 +36,8 @@ const Navbar = () => {
         >
           Work
         </ScrollLink>
+         )}
+         {isHomePage && (
         <ScrollLink
           to='about-section'
           spy={true}
@@ -45,6 +48,7 @@ const Navbar = () => {
         >
           About
         </ScrollLink>
+        )}
         <ScrollLink
           to='contact-section'
           spy={true}

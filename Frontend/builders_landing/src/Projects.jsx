@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar'
 import sampleImg from './assets/sample-logo.png'
 import {Tilt} from 'react-tilt'
+import Contact from './components/Contact.jsx'
 
 const Projects = () => {
 
@@ -23,7 +24,7 @@ const Projects = () => {
       <div className="lg:px-24 lg:py-24 md:max-xl:py-20 md:max-xl:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:max-xl:gap-28 gap-16 z-[1]">
         <section className="flex flex-col items-center">
             {/* Main div to enclose the 2 divs */}
-            <div className="relative mb-16 w-full items-start gap-6 lg:flex xl:gap-8 mx-auto">
+            <div className="relative mb-8 w-full items-start gap-6 lg:flex xl:gap-8 mx-auto">
                     {/* Div for sticky navbar for filters */}
                         <div className="w-full lg:sticky lg:left-0 lg:top-20 lg:w-48 lg:flex-shrink-0">
                     <div className="relative w-full rounded-md group border-gray-800 bg-gray-800 text-gray-300 placeholder-gray-300 shadow-lg mb-5 sm:max-w-xs">
@@ -94,6 +95,9 @@ const Projects = () => {
 </div>
 </div>
 </section>
+</div>
+<div className="ml-32 mr-32 max-[480px]:mr-0 max-[480px]:ml-0 md:max-xl:mr-0 md:max-xl:ml-0">
+<Contact />
 </div>
 </>
   )
