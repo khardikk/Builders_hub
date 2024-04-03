@@ -7,7 +7,10 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/'; // Check if current path is home page
   const isProjectsPage = location.pathname === '/projects'; // Check if current path is projects page
   return (
-    <div className='w-full flex pt-6 absolute z-[1]'>
+    
+    <div className='w-full pt-4 flex flex-col items-center absolute z-[1]'>
+
+      <div className='w-fit mx-auto flex pt-4 pb-4 absolute z-[1] border- ring-1  ring-gray-400 rounded-3xl border-white hover:shadow-[0_0_1px_#fff,inset_0_0_1px_#fff,0_0_3px_#fff,0_0_4px_#fff,0_0_5px_#fff]'>
       <div className='text-base font-semibold items-center flex-1 font-Inter'>
       {isHomePage && (
           <RouterLink
@@ -55,10 +58,11 @@ const Navbar = () => {
           smooth={true}
           offset={-70} // Adjust this offset to match the height of your fixed navbar
           duration={800}
-          className='mx-6 ml-4 mr-0 lg:mx-6 lg:ml-6 lg:mr-6 bg-gradient-to-r from-amber-300 via-cyan-400 to-indigo-400 inline-block text-transparent bg-clip-text hover:cursor-pointer'
+          className='mx-6 ml-4 mr-4 lg:mx-6 lg:ml-6 lg:mr-6 bg-gradient-to-r from-amber-300 via-cyan-400 to-indigo-400 inline-block text-transparent bg-clip-text hover:cursor-pointer'
         >
           Contact
         </ScrollLink>
+      </div>
       </div>
     </div>
   );
