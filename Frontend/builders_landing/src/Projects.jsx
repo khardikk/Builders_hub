@@ -80,7 +80,7 @@ const Projects = () => {
             className="lg:hover:preserve-3d lg:hover:translate-z-[1000px] lg:translate-z-0 lg:transition-transform lg:duration-100 lg:hover:z-10"
         >
             <div className="lg:hover:preserve-3d group relative flex h-36 bg-gray-900 flex-col items-center rounded-lg text-center text-white outline-none ring-offset-gray-900 hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
-                <img src={sampleImg} alt="Your Image Alt Text" className="z-40 flex pt-2" />
+                <img src={sampleImg} alt="Your Image Alt Text" className="z-2 flex pt-2" />
                 <div className="lg:group-hover:preserve-3d flat translate-z-2 absolute z-30 h-full w-full text-white opacity-100 delay-200 lg:group-hover:opacity-0 lg:group-hover:delay-[0s] flex items-center justify-center flex-wrap content-end">
                     <h2 className="text-lg font-bold pb-4">Your Title</h2>
                 </div>
