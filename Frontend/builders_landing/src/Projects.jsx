@@ -55,43 +55,27 @@ const Projects = () => {
                     
                     {/* Div for grid */}
 
-<div className="grid w-full grid-cols-2 grid-rows-[9rem] gap-2 md:grid-cols-3 xl:grid-cols-3 xl:gap-4 2xl:grid-cols-4">
-  {/* a sqaure div to fit in the grid of red color */}
-  <Tilt options={defaultOptions}>
-    <a href="/projects">
-    <div class="relative flex h-36 items-center rounded-lg text-center text-white outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
-        <div class="absolute h-full w-full bg-gray-900 opacity-100 delay-200  lg:group-hover:opacity-0"></div>
-        <div class="absolute -top-1/2 flex h-[200%] w-full origin-center scale-y-[50%] flex-col items-center rounded-lg text-center ring-1 ring-white ring-opacity-0 group-hover:ring-opacity-100">
-        <div class="absolute top-0 hidden h-64 w-full lg:block lg:opacity-0 lg:group-hover:opacity-100">
-        </div>
-        </div>
-        <div class="hidden h-32 w-32 opacity-0 lg:block lg:group-hover:opacity-95">
-        </div>
-        <div class="absolute bottom-6 flex min-h-[96px] w-full flex-col items-center justify-start text-center lg:group-hover:translate-y-[100%]">
-        <p class="absolute bottom-0 px-3 text-center text-sm font-medium capitalize leading-tight text-white text-opacity-60 opacity-100 md:text-base md:leading-tight lg:opacity-0">Design Blunders</p>
-        </div>
-    </div>
-    </a>
-    </Tilt>
-    {Array.from({ length: 20 }).map((_, index) => (
+<div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+  {Array.from({ length: 20 }).map((_, index) => (
     <Tilt options={defaultOptions} key={index}>
-        <a href="/projects" className="lg:hover:preserve-3d lg:hover:translate-z-[1000px] lg:translate-z-0 lg:transition-transform lg:duration-100 lg:hover:z-10">
-            <div className="group relative flex h-36 bg-gray-900 flex-col items-center rounded-lg text-center text-white outline-none ring-offset-gray-900 hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
-                <img src={sampleImg} alt="Your Image Alt Text" className="z-0 flex pt-2" />
-                <div className="absolute top-0 w-full h-full flex flex-col items-center justify-end lg:group-hover:opacity-0 lg:group-hover:delay-200 lg:opacity-100 lg:group-hover:delay-[0s] transition-opacity duration-200">
-                    <h2 className="text-lg font-bold pb-4">Your Title</h2>
-                </div>
-                <div className="absolute top-0 w-full h-full  ring-1 ring-white ring-opacity-1 bg-gray-900 opacity-0 flex items-center justify-center lg:group-hover:opacity-100 lg:opacity-0 lg:transition-opacity lg:duration-200">
-                    <p className="hidden lg:block lg:opacity-0 lg:group-hover:opacity-100">Your Description</p>
-                </div>
-            </div>
-        </a>
+      <a href="/projects" className="lg:translate-z-0 lg:transition-transform lg:duration-100 lg:hover:z-10">
+        <div className="group relative flex h-60 bg-gray-900 flex-col items-center rounded-lg text-center text-white outline-none ring-offset-gray-900 hover:z-10 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-4">
+          <img src={sampleImg} alt="Your Image Alt Text" className="z-0 flex pt-2" />
+          <div className="absolute top-0 w-full h-full flex flex-col items-center justify-end lg:group-hover:opacity-0 lg:group-hover:delay-200 lg:opacity-100 lg:group-hover:delay-[0s] transition-opacity duration-200">
+            <h2 className="text-lg font-bold pb-4">Your Title</h2>
+          </div>
+          <div className="absolute top-0 w-full h-full ring-1 ring-white ring-opacity-1 bg-gray-900 opacity-0 flex flex-col items-center justify-center lg:group-hover:opacity-100 lg:opacity-0 lg:transition-opacity lg:duration-200">
+            <p className="hidden lg:block lg:opacity-0 lg:group-hover:opacity-100">Your Description</p>
+            <img src={sampleImg} alt="Your Image Alt Text" className="hidden lg:block lg:opacity-0 lg:group-hover:opacity-100" />
+            <button className="hidden lg:block lg:opacity-0 lg:group-hover:opacity-100">View Project</button>
+          </div>
+        </div>
+      </a>
     </Tilt>
-))}
-
-
-
+  ))}
 </div>
+
+
 </div>
 </section>
 </div>
