@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll'; // Renamed alias for react-scroll Link
 import { Link as RouterLink ,useLocation } from 'react-router-dom'; // Renamed alias for react-router-dom Link
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -62,6 +64,14 @@ const Navbar = () => {
         >
           Contact
         </ScrollLink>
+        {window.innerWidth > 768 && ( // Adjust the breakpoint as needed
+            <Link
+              to='/'
+              className='mt-6 mx-6 ml-4 mr-0 lg:mx-6 lg:ml-6 lg:mr-6 py-2 my-2 bg-zinc-900 px-3.5 rounded-lg border-stone-500 ring-1 ring-gray-400 hover:bg-zinc-100 hover:text-black hover:cursor-pointer'
+            >
+              Join Us
+            </Link>
+              )}
       </div>
       </div>
     </div>
