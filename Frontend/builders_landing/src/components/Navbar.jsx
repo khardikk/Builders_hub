@@ -10,7 +10,7 @@ const Navbar = () => {
   const isProjectsPage = location.pathname === '/projects'; // Check if current path is projects page
   return (
     
-    <div className='w-full pt-4 flex flex-col items-center absolute z-[1]'>
+    <div className='w-full pt-4 flex flex-col items-center absolute z-[5] mb-5'>
 
       <div className='w-fit mx-auto flex pt-4 pb-4 absolute z-[1] border- ring-1  ring-gray-400 rounded-3xl border-white hover:shadow-[0_0_1px_#fff,inset_0_0_1px_#fff,0_0_3px_#fff,0_0_4px_#fff,0_0_5px_#fff]'>
       <div className='text-base font-semibold items-center flex-1 font-Inter'>
