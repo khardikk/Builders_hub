@@ -6,6 +6,7 @@ import Contact from "./components/Contact.jsx";
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 
+// Hello
 // Accessing environment variables
 const projectId = import.meta.env.VITE_REACT_APP_PROJECT_ID;
 const db = import.meta.env.VITE_REACT_APP_DATABASE;
