@@ -1,1 +1,0 @@
-## This is for Full Stack Projects
