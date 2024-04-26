@@ -3,15 +3,18 @@ import Navbar from "./components/Navbar";
 import sampleImg from "./assets/sample-logo.png";
 import { Tilt } from "react-tilt";
 import Contact from "./components/Contact.jsx";
-import sanityClient from "@sanity/client";
+import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 
 // Accessing environment variables
 const projectId = import.meta.env.VITE_REACT_APP_PROJECT_ID;
 const db = import.meta.env.VITE_REACT_APP_DATABASE;
 
-// Creating Sanity client with the provided project ID and dataset
-const client = sanityClient({ projectId: projectId, dataset: db });
+const client = createClient({
+  projectId: projectId,
+  dataset: db,
+  apiVersion: "2022-01-30",
+});
 const builder = imageUrlBuilder(client);
 
 const Projects = () => {
@@ -29,7 +32,7 @@ const Projects = () => {
     fetchProjects();
   }, []);
 
-  console.log(projects[0])
+  console.log(projects);
 
   // Tilt options
   const defaultOptions = {
@@ -90,7 +93,24 @@ const Projects = () => {
                 >
                   <span className="truncate">All</span>
                 </a>
-                {/* Other navigation links */}
+                <a
+                  aria-current="false"
+                  className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95"
+                >
+                  <span className="truncate">Frontend</span>
+                </a>
+                <a
+                  aria-current="false"
+                  className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95"
+                >
+                  <span className="truncate">Backend</span>
+                </a>
+                <a
+                  aria-current="false"
+                  className="group flex items-center justify-center rounded-3xl px-3 py-2 text-sm font-medium ring-1 ease-out-back-smooth cursor-pointer text-white/80 ring-white/20 transition duration-200 hover:scale-105 hover:bg-yellow-400 hover:bg-opacity-20 hover:text-white/90 hover:ring-yellow-400 hover:ring-opacity-50 active:scale-95"
+                >
+                  <span className="truncate">Fullstack</span>
+                </a>
               </nav>
             </div>
 
@@ -120,9 +140,7 @@ const Projects = () => {
                       </div>
                       {/* Additional project details */}
                       <div className="absolute top-0 w-full h-full ring-1 ring-white ring-opacity-1 bg-gray-900 opacity-0 flex flex-col items-center justify-center lg:group-hover:opacity-100 lg:opacity-0 lg:transition-opacity lg:duration-200">
-                        <p className="text-sm p-4">
-                          {project.bgcolor}
-                        </p>
+                        <p className="text-sm p-4">{project.bgcolor}</p>
                       </div>
                     </div>
                   </a>
