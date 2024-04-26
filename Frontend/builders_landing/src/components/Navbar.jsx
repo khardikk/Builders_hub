@@ -14,14 +14,14 @@ const Navbar = () => {
 
       <div className='w-fit mx-auto flex pt-4 pb-4 absolute z-[1] border- ring-1  ring-gray-400 rounded-3xl border-white hover:shadow-[0_0_1px_#fff,inset_0_0_1px_#fff,0_0_3px_#fff,0_0_4px_#fff,0_0_5px_#fff]'>
       <div className='text-base font-semibold items-center flex-1 font-Inter'>
-      {isHomePage && (
+      {/* {isHomePage && (
           <RouterLink
             to='/projects'
             className='mx-6 ml-4 mr-0 lg:mx-6 lg:ml-4 lg:mr-6 py-2 my-2 bg-zinc-900 px-3.5 rounded-lg border-stone-500 ring-1 ring-gray-400 hover:bg-zinc-100 hover:text-black hover:cursor-pointer'
           >
             Projects
           </RouterLink>
-        )}
+        )} */}
         {isProjectsPage && (
           <RouterLink
             to='/'
