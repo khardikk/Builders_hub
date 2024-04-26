@@ -1,8 +1,5 @@
 ## Welcome to the Builders Hub Repo
-- Find projects built by us ranging from 
- - frontend 
- - backend 
- - Fullstack
+- We are a community of builders and can help you build faster!
 
 ## Stacks 
 - You can find projects using the MERN stack, also we will be using NextJs and other industry standard tools as they come.
