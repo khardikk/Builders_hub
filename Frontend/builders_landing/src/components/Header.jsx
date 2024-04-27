@@ -1,6 +1,7 @@
 import React from 'react'
 import headergraphic from '../assets/headergraphic.jpg'
 import buildershublogo from '../assets/BHL2T.png'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
     </h1>
     <p className='text-3xl leading-normal my-5 text-gray-300 font-DMSans font-normal max-[480px]:w-[22rem] max-[480px]:text-2xl'>We are a community of builders and we believe in building projects to completion. 
       We collaborate to make the building experience better, faster and more enjoyable.</p></div>
-    <button className='ring-2 ring-neutral-300 rounded-lg py-3 px-16 font-Inter font-semibold text-base md:max-xl:mb-8 z-[2]  hover:bg-zinc-100 hover:text-black hover:cursor-pointer'>Join Us</button>
+    <Link to='https://discord.gg/7nFhsZgmtU'><button className='ring-2 ring-neutral-300 rounded-lg py-3 px-16 font-Inter font-semibold text-base md:max-xl:mb-8 z-[2]  hover:bg-zinc-100 hover:text-black hover:cursor-pointer'>Join Us</button></Link>
     </div>
 
     
