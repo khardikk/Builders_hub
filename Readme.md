@@ -1,10 +1,7 @@
+  ![BHL2T](https://github.com/khardikk/Builders_hub/assets/64458111/808184a2-7cc5-4768-88ce-7e09ec864d8c)
 ## Welcome to the Builders Hub Repo
-- Find projects built by us ranging from 
- - frontend 
- - backend 
- - Fullstack
-
-## Stacks 
+- We are a community of builders and can help you build faster!
+## Stacks
 - You can find projects using the MERN stack, also we will be using NextJs and other industry standard tools as they come.
 
 ## The Builders 
