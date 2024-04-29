@@ -1,4 +1,4 @@
-  ![BHL2T](https://github.com/khardikk/Builders_hub/assets/64458111/808184a2-7cc5-4768-88ce-7e09ec864d8c)
+[BHL2T](https://github.com/khardikk/Builders_hub/assets/64458111/808184a2-7cc5-4768-88ce-7e09ec864d8c)
 ## Welcome to the Builders Hub Repo
 - We are a community of builders and can help you build faster! join our community 
 ## Stacks
@@ -12,4 +12,4 @@
 ## Projects 
 -[ Payment App](https://cash-flow-alpha.vercel.app/) - Cashflow ( Clear UI with peer-to-peer Payment ) Tech Stack - React, Tailwind, Express, Mongo.
 
-- [ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
+-[ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
