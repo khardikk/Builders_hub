@@ -12,3 +12,4 @@
 ## Projects 
 -[ Payment App](https://cash-flow-alpha.vercel.app/) - Cashflow ( Clear UI with peer-to-peer Payment ) Tech Stack - React, Tailwind, Express, Mongo.
 
+- [ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
