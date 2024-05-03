@@ -10,7 +10,7 @@
 - [Himanshu Gupta](https://github.com/Himanshu-gupta31)
 
 ## Projects 
-- [ Payment App](https://cash-flow-alpha.vercel.app/) - Cashflow ( Clear UI with peer-to-peer Payment ) Tech Stack - React, Tailwind, Express, Mongo.
+- [ Payment App ](https://cash-flow-alpha.vercel.app/)  ( Cashflow offers a clear UI with peer-to-peer payment ) Tech Stack - React, Tailwind, Express, Mongo.
  
 - [ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
 
