@@ -10,8 +10,8 @@
 - [Himanshu Gupta](https://github.com/Himanshu-gupta31)
 
 ## Projects 
--[ Payment App](https://cash-flow-alpha.vercel.app/) - Cashflow ( Clear UI with peer-to-peer Payment ) Tech Stack - React, Tailwind, Express, Mongo.
+- [ Payment App](https://cash-flow-alpha.vercel.app/) - Cashflow ( Clear UI with peer-to-peer Payment ) Tech Stack - React, Tailwind, Express, Mongo.
+ 
+- [ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
 
--[ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
-
-- Builders HUB
+- [ Builders HUB ](https://buildershub.vercel.app/) ( Builders Hub Frontend + Sanity Backend ) Tech Stack - React, Tailwind, Sanity backend
