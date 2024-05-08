@@ -66,7 +66,7 @@ const Navbar = () => {
         </ScrollLink>
         {window.innerWidth > 768 && ( // Adjust the breakpoint as needed
             <Link
-              to='https://discord.gg/Qg8mQPDryB'
+              to='https://discord.gg/PheQBczzHh'
               className='mt-6 mx-6 ml-4 mr-4 lg:mx-6 lg:ml-6 lg:mr-4 py-2 my-2 bg-zinc-900 px-3.5 rounded-lg border-stone-500 ring-1 ring-gray-400 hover:bg-zinc-100 hover:text-black hover:cursor-pointer'
             >
               Join Us
