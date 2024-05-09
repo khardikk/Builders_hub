@@ -3,7 +3,8 @@ import headergraphic from '../assets/headergraphic.jpg'
 import buildershublogo from '../assets/BHL2T.png'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-
+import Live from '../assets/live.gif'
+import './Header.css'
 
 const Header = () => {
   const [builderCount,setBuilderCount] = useState(0)
@@ -31,8 +32,9 @@ const Header = () => {
     <p className='text-3xl leading-normal my-5 text-gray-300 font-DMSans font-normal max-[480px]:w-[22rem] max-[480px]:text-2xl'>We are a community of builders and we believe in building projects to completion. 
       We collaborate to make the building experience better, faster and more enjoyable.</p></div>
     <Link to='https://discord.gg/kcVk6aHP' className='z-[2]'><button className='ring-2 ring-neutral-300 rounded-lg py-3 px-16 font-Inter font-semibold text-base md:max-xl:mb-8 z-[2]  hover:bg-zinc-100 hover:text-black hover:cursor-pointer'>Join Us</button></Link>
-    <div>
-      <h2 className='text-2xl  leading-normal my-5 text-gray-300 font-DMSans font-bold max-[480px]:w-[22rem] max-[480px]:text-2xl'>Builders Count : {builderCount} </h2>
+    <div className='flex justify-center items-center'>
+      <div class="blob red"></div>
+      <h2 className='text-2xl  leading-normal my-5 text-gray-300 font-DMSans font-bold max-[480px]:w-[16rem] max-[480px]:text-2xl'>Builders Count : {builderCount} </h2>
     </div>
     </div>
 

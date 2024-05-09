@@ -7,6 +7,7 @@ import Hardikk from '../assets/Hardikk.png';
 import Akshat from '../assets/Akshat.png';
 import Himanshu from '../assets/Himanshu.png';
 
+
 //swiper modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.css';
