@@ -1,10 +1,9 @@
-## Welcome to the Builders Hub Repo
-- Find projects built by us ranging from 
- - frontend 
- - backend 
- - Fullstack
 
-## Stacks 
+![BHL2T](https://github.com/khardikk/Builders_hub/assets/64458111/d675c99c-cfe4-4257-9ecb-a4924ce0a4a5)
+
+## Welcome to the Builders Hub Repo
+- We are a community of builders and can help you build faster! join our community 
+## Stacks
 - You can find projects using the MERN stack, also we will be using NextJs and other industry standard tools as they come.
 
 ## The Builders 
@@ -13,5 +12,8 @@
 - [Himanshu Gupta](https://github.com/Himanshu-gupta31)
 
 ## Projects 
--[ Payment App](https://cash-flow-alpha.vercel.app/) - Cashflow ( Clear UI with peer-to-peer Payment ) Tech Stack - React, Tailwind, Express, Mongo.
+- [ Payment App ](https://cash-flow-alpha.vercel.app/)  ( Cashflow offers a clear UI with peer-to-peer payment ) Tech Stack - React, Tailwind, Express, Mongo.
+ 
+- [ Yoga Website ](https://yoga-website-jet.vercel.app/) ( Yoga Theme website ) Tech stack - React, CSS, Sanity backend 
 
+- [ Builders HUB ](https://buildershub.vercel.app/) ( Builders Hub Frontend + Sanity Backend ) Tech Stack - React, Tailwind, Sanity backend

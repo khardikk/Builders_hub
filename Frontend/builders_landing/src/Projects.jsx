@@ -128,14 +128,14 @@ const Projects = () => {
                       <img
                         src={builder.image(project.mainImage.asset._ref).url()}
                         alt={project.title}
-                        className="z-0 flex pt-2"
+                        className="z-0 flex h-3/6 w-full object-cover rounded-lg"
                       />
                       {/* Project details */}
                       <div className="absolute top-0 w-full h-full flex flex-col items-center justify-end lg:group-hover:opacity-0 lg:group-hover:delay-200 lg:opacity-100 lg:group-hover:delay-[0s] transition-opacity duration-200">
-                        <h2 className="text-lg font-bold pb-4">
+                        <h2 className="text-2xl font-semibold pb-4">
                           {project.title}
                         </h2>
-                        <h4 className="text-lg font-bold pb-4">
+                        <h4 className="text-lg font-normal pb-4">
                           {project.category}
                         </h4>
                       </div>
