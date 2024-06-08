@@ -34,7 +34,7 @@ const Header = () => {
     <Link to='https://discord.com/invite/M8kaaD2cHy' className='z-[2]'><button className='ring-2 ring-neutral-300 rounded-lg py-3 px-16 font-Inter font-semibold text-base md:max-xl:mb-8 z-[2]  hover:bg-zinc-100 hover:text-black hover:cursor-pointer'>Join Us</button></Link>
     <div className='flex justify-center items-center'>
       <div class="blob red"></div>
-      <h2 className='text-2xl  leading-normal my-5 text-gray-300 font-DMSans font-bold max-[480px]:w-[16rem] max-[480px]:text-2xl'>Builders Count : {builderCount} </h2>
+      <h2 className='text-2xl  leading-normal my-5 text-gray-300 font-DMSans font-bold max-[480px]:w-[16rem] max-[480px]:text-2xl'>Live Builders Count : {builderCount} </h2>
     </div>
     </div>
 
